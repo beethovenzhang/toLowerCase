@@ -1,0 +1,12 @@
+class Solution {
+    public String toLowerCase(String str) {
+        char[] result = str.toCharArray();//string to char array
+	     for (int i = 0; i < result.length; i++) {
+			if (result[i]>='A'&&result[i]<='Z') {
+				result[i]=(char)(result[i]-'A'+'a');//convert upper case char to lower case char
+			}
+		 }
+	     return new String(result);//char array to string
+		 
+	 }
+}
